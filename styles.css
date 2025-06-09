@@ -178,7 +178,7 @@ body {
 
 .venueDetailsMain .venue-column .location {
     font-weight: 700;
-    font-size: 0.8em;
+    font-size: 13px;
     text-align: center;
 }
 
@@ -198,7 +198,7 @@ body {
 
 .footer {
     font-family: sans-serif;
-    font-size: 10px;
+    font-size: 9px;
     color: rgba(94, 94, 94, 0.694);
     padding-bottom: 20px;
 }
@@ -212,7 +212,7 @@ body {
         font-size: 3em; /* Scale down for small screens */
     }
     .venueDetailsMain .venue-column .location {
-        font-size: 0.8em;
+        font-size: 13px;
     } 
 
 }
