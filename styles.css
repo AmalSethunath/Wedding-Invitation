@@ -214,5 +214,8 @@ body {
     .venueDetailsMain .venue-column .location {
         font-size: 13px;
     } 
+    .footer {
+        font-size: 8px;
+    }
 
 }
