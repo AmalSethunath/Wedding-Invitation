@@ -178,7 +178,7 @@ body {
 
 .venueDetailsMain .venue-column .location {
     font-weight: 700;
-    font-size: 0.9em;
+    font-size: 0.8em;
     text-align: center;
 }
 
@@ -211,4 +211,6 @@ body {
     .invitation h1 {
         font-size: 3em; /* Scale down for small screens */
     }
+   
+
 }
