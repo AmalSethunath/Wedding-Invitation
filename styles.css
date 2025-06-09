@@ -170,7 +170,7 @@ body {
 
 .venueDetailsMain .venue-column p {
     font-family: "Zen Maru Gothic", serif;
-    font-size: 0.9em;
+    font-size: 0.8em;
     color: #555;
     text-align: center;
     margin: 5px 0;
@@ -211,6 +211,8 @@ body {
     .invitation h1 {
         font-size: 3em; /* Scale down for small screens */
     }
-   
+    .venueDetailsMain .venue-column .location {
+        font-size: 0.8em;
+    } 
 
 }
