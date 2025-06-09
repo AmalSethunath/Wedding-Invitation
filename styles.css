@@ -134,10 +134,10 @@ body {
     margin-bottom: 0;
 }
 
-.venueDetailsMain .subMenue {
+/*.venueDetailsMain .subMenue {
     font-family: "Marck Script", cursive;
     color: #5C504C;
-}
+}*/
 
 .venueDetailsMain .venue-details {
     display: flex;

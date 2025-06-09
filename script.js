@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', (event) => {
     function updateCountdown() {
         const weddingDate = new Date('September 13, 2025 10:30:00').getTime();
@@ -21,21 +20,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
     }
 
-    function detectOS() {
-        const userAgent = window.navigator.userAgent || window.navigator.vendor || window.opera;
-
-        // Check for Apple devices
-        if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-            // Apple devices
-            document.getElementById('appleLink').style.display = 'inline';
-        } else {
-            // Other devices
-            document.getElementById('googleLink').style.display = 'inline';
-        }
-    }
-
-    const countdownInterval = setInterval(updateCountdown, 1000 * 60); // Update every minute
+    const countdownInterval = setInterval(updateCountdown, 1000 * 60);
     updateCountdown();
-
-    detectOS(); // Call the function to display the correct link
 });
+
+// ✅ Global redirect handler — opens a new page that triggers both links
+window.redirectToCalendar = function () {
+    window.open('calendar-redirect.html', '_blank');
+};
