@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', (event) => {
+    // Countdown Logic
     function updateCountdown() {
         const weddingDate = new Date(2025, 8, 13, 10, 30, 0).getTime();
         const now = new Date().getTime();
@@ -22,9 +23,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     const countdownInterval = setInterval(updateCountdown, 1000 * 60);
     updateCountdown();
-});
 
-// ✅ Global redirect handler — opens a new page that triggers both links
-window.redirectToCalendar = function () {
-    window.open('calendar-redirect.html', '_blank');
-};
+    // Add to Calendar Logic for Wedding and Reception
+    window.addToCalendar = function (type) {
+        if (type === 'wedding') {
+            window.open('calendar-wedding.html', '_blank');
+        } else if (type === 'reception') {
+            window.open('calendar-reception.html', '_blank');
+        }
+    };
+});

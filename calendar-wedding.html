@@ -1,0 +1,26 @@
+<!-- calendar-redirect.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting to Calendar Events...</title>
+</head>
+<body>
+  <h3 style="text-align: center; font-family: sans-serif; margin-top: 100px;">
+    Redirecting you to calendar events...
+  </h3>
+  <script>
+    const isApple = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream
+    ;
+
+    if (isApple) {
+      window.open('https://addcal.io/e/yem8fdrt7yeh/apple', '_blank');
+    } else {
+      window.open('https://addcal.io/e/yem8fdrt7yeh/google', '_blank');
+    }
+
+    // Optionally close this tab after a short delay
+    setTimeout(() => window.close(), 3000);
+  </script>
+</body>
+</html>

@@ -49,7 +49,6 @@ body {
     color: #5C504C;
 }
 
-
 .countdown {
     font-family: "Zen Maru Gothic", serif;
     display: flex;
@@ -89,34 +88,71 @@ body {
     max-width: 50%;
     mix-blend-mode: multiply;
     height: auto;
-
+}
+.calendar-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin: 20px 0;
+    padding: 0 10px; /* Prevent content from touching screen edges */
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
 }
 
-#calendar-links {
+.calendar-link-wedding {
     display: inline-block;
-    margin: 20px 0;
-    padding: 10px 10px;
-    background-color: #D9A5B3; /* Rose Pink */
-    border: none;
+    margin: 10px 0;
+    padding: 8px 12px;
+    background-color: #D9A5B3;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
     font-family: "Zen Maru Gothic", serif;
+    transition: background-color 0.3s;
+    text-align: center;
+    transform: translateX(-125px);
 }
 
-#calendar-links img {
+.calendar-link-wedding img {
     padding-right: 5px;
     max-width: 15px;
     height: auto;
 }
 
-#calendar-links a {
-    font-size: 0.9em;
-    color: #fff;
-    text-decoration: none;
+.calendar-link-wedding:hover {
+    background-color: #BA7F96;
 }
 
-#calendar-links:hover {
+#calendar-link-wedding {
+    background-color: #BA7F96; /* Slightly darker rose */
+}
+
+.calendar-link-reception {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 8px 12px;
+    background-color: #D9A5B3;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Zen Maru Gothic", serif;
+    transition: background-color 0.3s;
+    text-align: center;
+    transform: translateX(+125px);
+}
+
+.calendar-link-reception img {
+    padding-right: 5px;
+    max-width: 15px;
+    height: auto;
+}
+
+.calendar-link-reception:hover {
+    background-color: #BA7F96;
+}
+
+#calendar-links-reception:hover {
     background-color: #BA7F96; /* Slightly darker rose */
 }
 
@@ -133,11 +169,6 @@ body {
     color: #5C504C;
     margin-bottom: 0;
 }
-
-/*.venueDetailsMain .subMenue {
-    font-family: "Marck Script", cursive;
-    color: #5C504C;
-}*/
 
 .venueDetailsMain .venue-details {
     display: flex;
@@ -207,24 +238,12 @@ body {
     margin: 0;
     padding-bottom: 5px;
 }
-/* @media (max-width: 600px) {
-    .invitation h1 {
-        font-size: 3em; 
-        font-weight: 900;
-    }
-    .venueDetailsMain .venue-column .location {
-        font-size: 13px;
-    } 
-    .footer {
-        font-size: 8px;
-    }
 
-} */
-
+/* Mobile Responsiveness */
 @media (max-width: 600px) {
     .invitation h1 {
-        font-size: 3.6em; /* larger than before */
-        white-space: nowrap; /* ✅ prevent line break */
+        font-size: 3.6em;
+        white-space: nowrap; /* Prevent line break */
     }
 
     .invitation {
@@ -246,11 +265,10 @@ body {
     }
 
     .venueDetailsMain .venue-details {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    gap: 20px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 20px;
     }
-
 
     .venueDetailsMain .venue-column {
         width: 90%;
@@ -260,4 +278,50 @@ body {
     .footer {
         font-size: 7px;
     }
+    
+    /* Ensure the Add to Calendar buttons are inline on mobile */
+    .venueDetailsMain .venue-column .add-to-calendar-container {
+        display: flex;
+        justify-content: space-between; /* Align buttons side by side */
+        gap: 10px;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .venueDetailsMain .venue-column .add-to-calendar {
+        width: 48%; /* Ensure both buttons take equal width */
+        text-align: center;
+    }
+
+    /* Stack buttons vertically on smaller screens */
+    .venueDetailsMain .venue-column .add-to-calendar-container {
+        flex-direction: column;
+    }
+   .calendar-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px;
+    flex-wrap: nowrap; /* Stay side-by-side */
+    box-sizing: border-box;
+  }
+
+  .calendar-link-wedding,
+  .calendar-link-reception {
+    flex: 1 1 0;           /* Responsive width */
+    min-width: 0;
+    max-width: 100%;
+    padding: 10px;
+    text-align: center;
+    white-space: nowrap;
+    transform: none !important; /* Remove offset if any */
+  }
+
+  .calendar-link-wedding img,
+  .calendar-link-reception img {
+    max-width: 16px;
+    height: auto;
+    margin-right: 5px;
+  }
 }
