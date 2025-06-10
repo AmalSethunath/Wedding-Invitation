@@ -165,7 +165,7 @@ body {
     font-family: "Reenie Beanie", cursive;
     font-style: italic;
     font-weight: 500;
-    font-size: 2.5em;
+    font-size: 4em;
     color: #5C504C;
     margin-bottom: 0;
 }
@@ -250,8 +250,11 @@ body {
         padding: 10px;
     }
 
-    .invitation h3, .invitation h2 {
+    .invitation h3 {
         font-size: 1em;
+    }
+    .invitation h2{
+        font-size: 1.5em;
     }
 
     .countdown {
@@ -323,5 +326,8 @@ body {
     max-width: 16px;
     height: auto;
     margin-right: 5px;
+  }
+  .venueDetailsMain h2{
+    font-size: 2em;
   }
 }
