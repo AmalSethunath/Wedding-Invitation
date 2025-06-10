@@ -82,10 +82,10 @@ body {
 }
 
 .wedding-image {
-    margin-top: -60px;
+    margin-top: -90px;
     margin-bottom: -40px;
     border-radius: 10px;
-    max-width: 50%;
+    max-width: 80%;
     mix-blend-mode: multiply;
     height: auto;
 }
