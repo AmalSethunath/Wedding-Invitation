@@ -21,7 +21,7 @@ body {
 
 .invitation h1 {
     font-family: "Reenie Beanie", cursive;
-    font-weight: 800;
+    font-weight: 900;
     font-style: italic;
     font-size: 5em;
     margin-top: 5px;
@@ -207,9 +207,10 @@ body {
     margin: 0;
     padding-bottom: 5px;
 }
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     .invitation h1 {
-        font-size: 3em; /* Scale down for small screens */
+        font-size: 3em; 
+        font-weight: 900;
     }
     .venueDetailsMain .venue-column .location {
         font-size: 13px;
@@ -218,4 +219,45 @@ body {
         font-size: 8px;
     }
 
+} */
+
+@media (max-width: 600px) {
+    .invitation h1 {
+        font-size: 3.6em; /* larger than before */
+        white-space: nowrap; /* ✅ prevent line break */
+    }
+
+    .invitation {
+        padding: 10px;
+    }
+
+    .invitation h3, .invitation h2 {
+        font-size: 1em;
+    }
+
+    .countdown {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .countdown-box {
+        padding: 8px 12px;
+        margin: 5px;
+    }
+
+    .venueDetailsMain .venue-details {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 20px;
+    }
+
+
+    .venueDetailsMain .venue-column {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .footer {
+        font-size: 7px;
+    }
 }
