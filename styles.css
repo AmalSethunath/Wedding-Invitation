@@ -246,6 +246,9 @@ body {
         font-size: 3.6em;
         white-space: nowrap;
     }
+    .wedding-image {
+    margin-top: -70px;
+    }
 
     .invitation {
         padding: 10px;
