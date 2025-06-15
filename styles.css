@@ -6,7 +6,7 @@ html, body {
 
 body {
     font-family: 'Arial, sans-serif';
-    background-color: #FAF3F0; /* Soft Linen */
+    background-color: #F3F0EA; /* Warm Ivory */
     display: flex;
     justify-content: center;
 }
@@ -26,19 +26,19 @@ body {
     font-size: 5em;
     margin-top: 5px;
     white-space: nowrap;
-    color: #8C977D; /* Olive Green */
+    color: #3F5736; /* Deep Leafy Green */
 }
 
 .and {
     font-style: italic;
-    color: #D9A5B3; /* Rose Pink */
+    color: #E88BA1; /* Rose Pink */
 }
 
 .invitation h3 {
     font-family: "Marck Script", cursive;
     font-size: 1em;
     font-weight: 400;
-    color: #5C504C; /* Soft Brown */
+    color: #4E4B48; /* Soft Brown */
     margin-top: 60px;
 }
 
@@ -46,7 +46,7 @@ body {
     font-family: "Marck Script", cursive;
     font-size: 1.2em;
     font-weight: 600;
-    color: #5C504C;
+    color: #4E4B48;
 }
 
 .countdown {
@@ -57,7 +57,7 @@ body {
 }
 
 .countdown-box {
-    background: #F5ECE9; /* Ivory */
+    background: #F3EBE6; /* Ivory Rose Tint */
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 10px 20px;
@@ -71,32 +71,33 @@ body {
     font-weight: 700;
     font-size: 1.5em;
     font-style: italic;
-    color: #8C977D;
+    color: #3F5736;
 }
 
 .label {
     font-weight: 200;
     display: block;
     font-size: 0.78em;
-    color: #555;
+    color: #3C3C3C;
 }
 
 .wedding-image {
-    margin-top: -90px;
+    margin-top: -70px;
     margin-bottom: -40px;
     border-radius: 10px;
     max-width: 80%;
     mix-blend-mode: multiply;
     height: auto;
 }
+
 .calendar-row {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    flex-wrap: wrap;
     margin: 20px 0;
-    padding: 0 10px; /* Prevent content from touching screen edges */
+    padding: 0 10px;
     box-sizing: border-box;
     width: 100%;
     max-width: 100%;
@@ -106,7 +107,7 @@ body {
     display: inline-block;
     margin: 10px 0;
     padding: 8px 12px;
-    background-color: #D9A5B3;
+    background-color: #E88BA1;
     border-radius: 5px;
     cursor: pointer;
     font-family: "Zen Maru Gothic", serif;
@@ -122,18 +123,18 @@ body {
 }
 
 .calendar-link-wedding:hover {
-    background-color: #BA7F96;
+    background-color: #CC6D87;
 }
 
 #calendar-link-wedding {
-    background-color: #BA7F96; /* Slightly darker rose */
+    background-color: #CC6D87;
 }
 
 .calendar-link-reception {
     display: inline-block;
     margin: 10px 0;
     padding: 8px 12px;
-    background-color: #D9A5B3;
+    background-color: #E88BA1;
     border-radius: 5px;
     cursor: pointer;
     font-family: "Zen Maru Gothic", serif;
@@ -149,11 +150,11 @@ body {
 }
 
 .calendar-link-reception:hover {
-    background-color: #BA7F96;
+    background-color: #CC6D87;
 }
 
 #calendar-links-reception:hover {
-    background-color: #BA7F96; /* Slightly darker rose */
+    background-color: #CC6D87;
 }
 
 .venueDetailsMain {
@@ -166,7 +167,7 @@ body {
     font-style: italic;
     font-weight: 500;
     font-size: 4em;
-    color: #5C504C;
+    color: #4E4B48;
     margin-bottom: 0;
 }
 
@@ -194,7 +195,7 @@ body {
     font-family: "Marck Script", cursive;
     font-size: 1.2em;
     font-weight: 600;
-    color: #5C504C;
+    color: #4E4B48;
     text-align: center;
     margin: 0;
 }
@@ -202,7 +203,7 @@ body {
 .venueDetailsMain .venue-column p {
     font-family: "Zen Maru Gothic", serif;
     font-size: 0.8em;
-    color: #555;
+    color: #3C3C3C;
     text-align: center;
     margin: 5px 0;
 }
@@ -216,7 +217,7 @@ body {
 .venueDetailsMain .venue-column .location a {
     font-family: "Marck Script", cursive;
     text-decoration: none;
-    color: #8C977D; /* Olive Green */
+    color: #3F5736; /* Deep Leafy Green */
     font-style: italic;
 }
 
@@ -224,7 +225,7 @@ body {
     margin-top: 50px;
     font-family: "Zen Maru Gothic", serif;
     text-decoration: none;
-    color: #5C504C;
+    color: #4E4B48;
 }
 
 .footer {
@@ -243,7 +244,7 @@ body {
 @media (max-width: 600px) {
     .invitation h1 {
         font-size: 3.6em;
-        white-space: nowrap; /* Prevent line break */
+        white-space: nowrap;
     }
 
     .invitation {
@@ -253,7 +254,8 @@ body {
     .invitation h3 {
         font-size: 1em;
     }
-    .invitation h2{
+
+    .invitation h2 {
         font-size: 1.5em;
     }
 
@@ -281,53 +283,53 @@ body {
     .footer {
         font-size: 7px;
     }
-    
-    /* Ensure the Add to Calendar buttons are inline on mobile */
+
     .venueDetailsMain .venue-column .add-to-calendar-container {
         display: flex;
-        justify-content: space-between; /* Align buttons side by side */
+        justify-content: space-between;
         gap: 10px;
         margin-top: 20px;
         width: 100%;
     }
 
     .venueDetailsMain .venue-column .add-to-calendar {
-        width: 48%; /* Ensure both buttons take equal width */
+        width: 48%;
         text-align: center;
     }
 
-    /* Stack buttons vertically on smaller screens */
     .venueDetailsMain .venue-column .add-to-calendar-container {
         flex-direction: column;
     }
-   .calendar-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding: 0 10px;
-    flex-wrap: nowrap; /* Stay side-by-side */
-    box-sizing: border-box;
-  }
 
-  .calendar-link-wedding,
-  .calendar-link-reception {
-    flex: 1 1 0;           /* Responsive width */
-    min-width: 0;
-    max-width: 100%;
-    padding: 10px;
-    text-align: center;
-    white-space: nowrap;
-    transform: none !important; /* Remove offset if any */
-  }
+    .calendar-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 0 10px;
+        flex-wrap: nowrap;
+        box-sizing: border-box;
+    }
 
-  .calendar-link-wedding img,
-  .calendar-link-reception img {
-    max-width: 16px;
-    height: auto;
-    margin-right: 5px;
-  }
-  .venueDetailsMain h2{
-    font-size: 2em;
-  }
+    .calendar-link-wedding,
+    .calendar-link-reception {
+        flex: 1 1 0;
+        min-width: 0;
+        max-width: 100%;
+        padding: 10px;
+        text-align: center;
+        white-space: nowrap;
+        transform: none !important;
+    }
+
+    .calendar-link-wedding img,
+    .calendar-link-reception img {
+        max-width: 16px;
+        height: auto;
+        margin-right: 5px;
+    }
+
+    .venueDetailsMain h2 {
+        font-size: 2em;
+    }
 }
